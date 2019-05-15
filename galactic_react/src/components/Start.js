@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-export default class Invaders extends Component {
+export default class Start extends Component {
   render() {
     return (
-      <div className="invaders">
+      <div className="start">
         { this.props.children }
       </div>
     )
