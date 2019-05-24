@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-export default class Ship extends Component {
+export default class Canvas extends Component {
   render() {
     return (
-      <div className="ship">
+      <div className="canvas">
         { this.props.children }
       </div>
     )

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import './Start.css';
 
-export default class Start extends Component {
+class Start extends Component {
+  state = {
+    logo: `Example logo`,
+    button: ``
+  }
   render() {
     return (
       <div className="start">
@@ -13,3 +16,5 @@ export default class Start extends Component {
     )
   }
 }
+
+export default Start;
