@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import Bullet from './Bullet';
 
 class Ship extends Component {
+  constructor(args) {
+    this.position = args.position
+    this.lastShot = 0;
+    this.create = args.create;
+  }
+  
   render() {
     return (
       <div className="container">
