@@ -13,7 +13,7 @@ class Ship extends Component {
   render() {
     return (
       <div className="container">
-        <div className="arrow-up"></div>
+        <div className="ship"></div>
       </div>
     )
   }
