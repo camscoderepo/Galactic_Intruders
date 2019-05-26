@@ -14,7 +14,7 @@ const KEY = {
 
 class Game extends Component {
   constructor() {
-  super();
+    super();
     this.state = {
       screen: {
         width: window.innerWidth,
@@ -49,12 +49,12 @@ class Game extends Component {
          
         <div className="stars"></div>
         <div className="twinkling"></div>
-        <div className="arrow-up"></div>
         <div className="startButton"></div>
+        <div className="ship"></div>
+        
         <canvas ref="canvas"
           width={this.state.screen.width * this.state.screen.ratio}
-          height={this.state.screen.height * this.state.screen.ratio}
-          
+          height={this.state.screen.height * this.state.screen.ratio} 
         />
       </div>
     );
