@@ -16,9 +16,10 @@ class Game extends Component {
   constructor() {
     super();
     this.state = {
+
       screen: {
         width: window.innerWidth,
-        height:window.innerHeight,
+        height: window.innerHeight,
         ratio: window.devicePixelRatio || 1,
       },
       keys: {
@@ -32,6 +33,9 @@ class Game extends Component {
       inGame: false
     }
     this.ship = [];
+    this.start = [];
+    this.stars = [];
+    this.twinkling =[];
   }
 
   handleKeys(value, e){
@@ -46,16 +50,18 @@ class Game extends Component {
   render(){
     return (
       <div className="App">
-         
-        <div className="stars"></div>
-        <div className="twinkling"></div>
-        <div className="startButton"></div>
-        <div className="ship"></div>
+        <div className="container">     
+          <div className="startButton"></div>
+          <div className="ship"></div>
+          <div className="stars"></div>
+          <div className="twinkling"></div>  
         
-        <canvas ref="canvas"
-          width={this.state.screen.width * this.state.screen.ratio}
-          height={this.state.screen.height * this.state.screen.ratio} 
-        />
+          <canvas ref="canvas"
+            width={this.state.screen.width * this.state.screen.ratio}
+            height={this.state.screen.height * this.state.screen.ratio} 
+            
+          />
+        </div>
       </div>
     );
   }

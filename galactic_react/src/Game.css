@@ -31,19 +31,19 @@ canvas {
 }
 
 .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  background:#000 url(../src/assets/stars.png) repeat top center;
   z-index:0;
 }
 
 .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  background:transparent url(../src/assets/twinkling.png) repeat top center;
   z-index:0;
 
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
+  -moz-animation:move-twink-back 500s linear infinite;
+  -ms-animation:move-twink-back 500s linear infinite;
+  -o-animation:move-twink-back 500s linear infinite;
+  -webkit-animation:move-twink-back 500s linear infinite;
+  animation:move-twink-back 500s linear infinite;
 }
 
 
@@ -80,13 +80,11 @@ button {
 }
 
 .ship {
-    position: fixed;
+    position: relative;
     left: 50%;
     width: 0; 
-    height: 90%; 
-    border-left: 1em solid transparent;
-    border-right: 1em solid transparent;
-    border-bottom: 1em solid white;
+    height: 90%;
+    background-image: url("./assets/ship.png");
 }
 
 @font-face {

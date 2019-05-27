@@ -12,9 +12,7 @@ class Ship extends Component {
   
   render() {
     return (
-      <div className="container">
-        <div className="ship"></div>
-      </div>
+     <div className="ship"></div>
     )
   }
 }
