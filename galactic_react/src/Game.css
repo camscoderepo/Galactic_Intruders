@@ -27,7 +27,7 @@ canvas {
   bottom:0;
   width:100%;
   height:100%;
-  display:block;
+  
 }
 
 .stars {
@@ -37,7 +37,7 @@ canvas {
 
 .twinkling{
   background:transparent url(../src/assets/twinkling.png) repeat top center;
-  z-index:0;
+  
 
   -moz-animation:move-twink-back 500s linear infinite;
   -ms-animation:move-twink-back 500s linear infinite;
@@ -80,11 +80,11 @@ button {
 }
 
 .ship {
-    position: relative;
+    position: absolute;
     left: 50%;
-    width: 0; 
-    height: 90%;
-    background-image: url("./assets/ship.png");
+    top: 90%;
+    src: url("../src/assets/ship.png");
+    z-index: 1;
 }
 
 @font-face {
