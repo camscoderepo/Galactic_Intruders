@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './Game.css';
 import Ship from './components/Ship';
-import Start from './components/Start';
+import StartButton from './components/Button';
 import Stars from './components/Stars';
 import Twinkling from './components/Twinkling';
-import Canvas from './components/Canvas';
+
 
 
 class Game extends Component {
@@ -25,9 +25,9 @@ class Game extends Component {
 
   render(){
     return (
-      <div className="App">
+      <div className="Game">
         <div> 
-          <Start />
+          <StartButton />
           <Ship />
           <Stars />
           <Twinkling />
