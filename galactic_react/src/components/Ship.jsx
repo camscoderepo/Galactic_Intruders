@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Bullet from './Bullet';
 import shipImg from '../assets/ship.png';
-import '../Game.css';
+import styled from 'styled-components';
 
 const KEY = {
   LEFT:  37,
@@ -11,6 +11,14 @@ const KEY = {
 
   SPACE: 32
 };
+
+const StyledShip = styled.image`
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  z-index: 1;
+`
+
 
 
 
@@ -51,9 +59,9 @@ class Ship extends Component {
   
   render() {
     return (
-      <div className="ship">
-     <img src={shipImg} alt="Ship" />
-     </div>
+      <StyledShip>
+     <img src={shipImg} alt="" />
+     </StyledShip>   
     )
   }
 }
