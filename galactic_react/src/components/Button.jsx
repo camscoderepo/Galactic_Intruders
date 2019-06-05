@@ -13,7 +13,7 @@ const Button = styled.button`
   cursor: pointer;
   border: solid 5px white;
   z-index: 1;
-  left: 921px;
+  left: 50%;
   top: 70%;
 `
 

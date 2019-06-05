@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import styled from "styled-components";
 
-export default class Bullet extends Component {
+
+
+
+
+class Bullet extends Component {
   render() {
     return (
       <div className="bullet">
-        { this.props.children }
+        
       </div>
     )
   }
 }
+
+export default Bullet;

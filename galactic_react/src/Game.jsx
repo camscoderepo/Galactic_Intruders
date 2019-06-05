@@ -4,7 +4,7 @@ import Ship from './components/Ship';
 import StartButton from './components/Button';
 import Stars from './components/Stars';
 import Twinkling from './components/Twinkling';
-
+import Score from './components/Score';
 
 
 class Game extends Component {
@@ -27,6 +27,7 @@ class Game extends Component {
     return (
       <div className="Game">
         <div> 
+          <Score />
           <StartButton />
           <Ship />
           <Stars />
