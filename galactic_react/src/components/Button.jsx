@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 
@@ -17,14 +17,12 @@ const Button = styled.button`
   top: 70%;
 `
 
-class StartButton extends Component {
-
-  render() {
+function Start(props) {
     return (
   <Button>Start</Button>
       
     )
   }
-}
 
-export default StartButton;
+
+export default Start;
